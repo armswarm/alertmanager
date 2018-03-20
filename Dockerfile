@@ -13,7 +13,7 @@ RUN \
  tar xfz \
     /tmp/alertmanager.tar.gz -C /tmp && \
   mkdir -p \
-    /alertmanager
+    /alertmanager \
     /etc/alertmanager && \
  cd /tmp/alertmanager-${ALERTMANAGER_VERSION}.linux-armv7/ && \
  mv alertmanager amtool /bin/ && \
