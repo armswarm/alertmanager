@@ -4,6 +4,7 @@ ARG ALERTMANAGER_VERSION
 ENV ALERTMANAGER_VERSION=${ALERTMANAGER_VERSION}
 
 RUN \
+ apk add --no-cache ca-certificates && \
  apk add --no-cache --virtual=.fetch-dependencies \
 	curl && \
 # install alertmanager
